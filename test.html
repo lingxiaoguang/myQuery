@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width:100px;
+				height:100px;
+				background:#f66;
+				margin:20px auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>		
+	
+		
+		<script src="myquery.js"></script>
+		<script>
+			$(function(){
+				$('#box').click(function(){
+					$(this).animate({'width':'300'},function(){alert('good job');});	
+				});
+			});
+		</script>
+	</body>
+</html>
